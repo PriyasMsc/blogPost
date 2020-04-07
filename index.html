@@ -3,7 +3,7 @@
 
 <body>
 
-	<h1>JavaScript Important Topics</h1>
+	<h1>Important Topics To Learn Script Language</h1>
 	<hr />
 	<h2>Closures</h2>
 	<p>A closure is an inner function that has access to the outer (enclosing) function’s variables scope chain. The
@@ -40,25 +40,73 @@
       
 	<b>OutPut: </b><i id="closure"></i>
   </pre>
-
-
 	<hr />
+
 	<h2>Hoisting</h2>
 	<p>Hoisting is a JavaScript mechanism where variables and function declarations are moved to the top of their scope
 		before code execution.
 	</p>
-  <pre>
-    
+	<pre class="preTag">
 
-x = 5; // Assign 5 to x
+    hoist = 5; // Assign 5 to hoist
 
-elem = document.getElementById("demo"); // Find an element 
-elem.innerHTML = x;           // Display x in the element
+    var elem = document.getElementById("hoist"); // Find an element 
+    elem.innerHTML = hoist;           // Display hoist in the element
 
-var x; // Declare x
-
+    var hoist; // Declare hoist
+      
+	<b>OutPut: </b><i id="hoist"></i>
     </pre>
-    <p id="hoist"></p>
+	<hr />
+	<h2>Strict Mode</h2>
+	<p>
+		<pre class="preTag"> "use strict"; </pre> Defines that JavaScript code should be executed in "strict mode". this
+		directive was new in ES5.
+	</p>
+	<ul>
+		<li> Strict mode makes it easier to write "secure" JavaScript.
+		</li>
+		<li>
+			Strict mode changes previously accepted "bad syntax" into real errors.
+
+			As an example, in normal JavaScript, mistyping a variable name creates a new global variable. In strict
+			mode, this will throw an error, making it impossible to accidentally create a global variable.
+		</li>
+		<li>
+			In normal JavaScript, a developer will not receive any error feedback assigning values to non-writable
+			properties.
+		</li>
+		<li>
+			In strict mode, any assignment to a non-writable property, a getter-only property, a non-existing property,
+			a non-existing variable, or a non-existing object, will throw an error.
+
+		</li>
+	</ul>
+<hr />
+	<h2>Object PRoperties and Descriptors</h2>
+	<p>
+		<pre class="preTag"> "use strict"; </pre> Defines that JavaScript code should be executed in "strict mode". this
+		directive was new in ES5.
+	</p>
+	<ul>
+		<li> Strict mode makes it easier to write "secure" JavaScript.
+		</li>
+		<li>
+			Strict mode changes previously accepted "bad syntax" into real errors.
+
+			As an example, in normal JavaScript, mistyping a variable name creates a new global variable. In strict
+			mode, this will throw an error, making it impossible to accidentally create a global variable.
+		</li>
+		<li>
+			In normal JavaScript, a developer will not receive any error feedback assigning values to non-writable
+			properties.
+		</li>
+		<li>
+			In strict mode, any assignment to a non-writable property, a getter-only property, a non-existing property,
+			a non-existing variable, or a non-existing object, will throw an error.
+
+		</li>
+	</ul>
 
 </body>
 
