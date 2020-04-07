@@ -1,25 +1,33 @@
 <!DOCTYPE html>
 <html>
+
 <body>
 
-<h2>JavaScript Closures</h2>
+	<h1>JavaScript Important Topics</h1>
+	<hr />
+	<h2>Closures</h2>
+	<p>A closure is an inner function that has access to the outer (enclosing) function’s variables—scope chain. The
+		closure has three scope chains: it has access to its own scope (variables defined between its curly brackets),
+		it has access to the outer function’s variables, and it has access to the global variables.
 
-<p>Counting with a local variable.</p>
+		The inner function has access not only to the outer function’s variables, but also to the outer function’s
+		parameters. Note that the inner function cannot call the outer function’s arguments object, however, even though
+		it can call the outer function’s parameters directly.
+	</p>
 
-<button type="button" onclick="myFunction()">Count!</button>
+	<p>
+		Closure means that an inner function always has access to the vars and parameters of its outer function, even
+		after the outer function has returned.
+	</p>
+	<p>
+		A function can return another function in JavaScript. A function which is assigned to a variable is called
+		function expression
+	</p>
+	<p>Find the example below:</p>
 
-<p id="demo">0</p>
+	<p id="closure"></p>
 
-<script>
-var add = (function () {
-  var counter = 0;
-  return function () {counter += 1; return counter;}
-})();
-
-function myFunction(){
-  document.getElementById("demo").innerHTML = add();
-}
-</script>
-
+	<hr />
 </body>
+
 </html>
