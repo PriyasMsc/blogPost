@@ -13,4 +13,13 @@ function showName(firstName, lastName) {
 }
 
 document.getElementById("closure").innerHTML =
-  showName("Priyanga", "Subrmaniam"); // Your name is Michael Jackson
+  showName("Priyanga", "Subramaniam"); 
+  
+
+  
+hoist = 5; // Assign 5 to hoist
+
+elem = document.getElementById("hoist"); // Find an element 
+elem.innerHTML = hoist;           // Display hoist in the element
+
+var hoist; // Declare hoist
