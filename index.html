@@ -6,7 +6,7 @@
 	<h1>JavaScript Important Topics</h1>
 	<hr />
 	<h2>Closures</h2>
-	<p>A closure is an inner function that has access to the outer (enclosing) function’s variables—scope chain. The
+	<p>A closure is an inner function that has access to the outer (enclosing) function’s variables scope chain. The
 		closure has three scope chains: it has access to its own scope (variables defined between its curly brackets),
 		it has access to the outer function’s variables, and it has access to the global variables.
 
@@ -24,10 +24,29 @@
 		function expression
 	</p>
 	<p>Find the example below:</p>
+	<pre class="preTag">
+    // Write Javascript code!
+    function showName(firstName, lastName) {
+      var nameIntro = "My name is ";
+      // this inner function has access to the outer function's variables, including the parameter
+      function makeFullName() {
+        return nameIntro + firstName + " " + lastName;
+      }
 
-	<p id="closure"></p>
+      return makeFullName();
+    }
+
+    document.getElementById("closure").innerHTML = showName("Priyanga", "Subrmaniam"); // Your name is Michael Jackson
+      
+	<b>OutPut: </b><i id="closure"></i>
+  </pre>
+
 
 	<hr />
+	<h2>Hoisting</h2>
+	<p>Hoisting is a JavaScript mechanism where variables and function declarations are moved to the top of their scope
+		before code execution.
+	</p>
 </body>
 
 </html>
