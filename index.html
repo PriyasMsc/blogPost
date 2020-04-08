@@ -180,6 +180,26 @@ So, in a function, this refers to the Global object [object Window].
   return this;
 }</pre>
     </li>
+     <li>
+      this in a Function strict, 
+In a JavaScript function, the owner of the function is the default binding for this.
+
+So, when used in a function, in strict mode, this is undefined.
+
+<pre class="preTag">function myFunction() {
+  return this;
+}</pre>
+    </li>
+         <li>
+     this in Event Handlers
+In HTML event handlers, this refers to the HTML element that received the event
+
+<pre class="preTag">
+  onclick="this.style.display='none'"    
+  
+  <button onclick="this.style.display='none'">  Click to Remove Me!
+</button></pre>
+    </li>
 
 	</ul>
 
